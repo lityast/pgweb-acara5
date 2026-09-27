@@ -151,8 +151,8 @@
                 // Bind popup saat diklik
                 layer.bindPopup(popup_content);
 
-                // Tooltip saat kursor diarahkan ke polygon
-                layer.bindTooltip(feature.properties.WADMKC || feature.properties.NAMOBJ || "Wilayah", {
+                // Tooltip saat kursor diarahkan ke polygon (menampilkan jumlah penduduk murni angka)
+                layer.bindTooltip(String(feature.properties.jumlah_penduduk_kecamatan_Penduduk), {
                     direction: "auto",
                     sticky: true,
                 });
